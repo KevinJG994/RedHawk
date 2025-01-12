@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+}
+
+body {
+    background-image: url('../Images/panel-de-manga-hcfia3ruyaoxhr5i.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Estilos navegador */
+header {
+    background-color: #333;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 5rem
+}
+
+.nav-item a:hover {
+    color: rgb(145, 12, 12)
+}
+
+.basket {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-right: 10rem;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 10rem;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+/* Estilos de contenido principal */
+main {
+    background-color: rgb(236, 233, 233);
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.carousel slide {
+    width: 80%;
+}
+
+
+
+
+/* Estilos del card */
+.productos-destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+
+
+.fila {
+    display: flex;
+    margin: 3rem;
+}
+
+.card {
+    padding: 20px;
+    background-color: #fff;
+    width: 16rem;
+    margin: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+
+.card-img-top:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 2s ease;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Estilos de pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales ul {
+    padding-left: 0px;
+}
+
+.redes-sociales ul li {
+    margin: 20px;
+    display: inline;
+}
+
+.redes-sociales i {
+    color: #fff;
+    font-size: 2rem;
+}
