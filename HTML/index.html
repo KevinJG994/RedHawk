@@ -1,292 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedHawk || Tienda online</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-    />
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedHawk || Tienda online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a href="#" id="logo"><img src="../Images/Logo.png" class="logo"/></a> 
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#" id="index">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" id="products">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" id="contact">Contacto</a>
-                  </li>
-                </ul>
-                <div class="basket">
-                <i class="bi bi-basket2"></i>
-            </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <main>
-        <section id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../Images/Carrousel1.jpg" class="d-block w-100" alt="LuffyPromo">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../Images/Carrousel2.jpg" class="d-block w-100" alt="IsagiPromo">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../Images/Carrousel3.jpg" class="d-block w-100" alt="TanjiroPromo">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </section>
-
-        <section class="productos-destacados">
-            <h2>Productos destacados</h2>
-            <div class="productos-container">
-              <div class="fila">
-                <div class="card">
-                  <img
-                    src="../Images/Nezuko.png"
-                    class="card-img-top"
-                    alt="FunkoPop Nezuko"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Kamado Nezuko</h4>
-                    <p class="card-text">Colección Demon Slayer.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Gojo.png"
-                    class="card-img-top"
-                    alt="FunkoPop Gojo"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Satoru Gojo</h4>
-                    <p class="card-text">Colección Jujutsu Kaisen.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Crocodile.png"
-                    class="card-img-top"
-                    alt="FunkoPop Crocodile"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Sir Crocodile</h4>
-                    <p class="card-text">Colección One Piece.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Pain.png"
-                    class="card-img-top"
-                    alt="FunkoPop Pain"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Pain</h4>
-                    <p class="card-text">Colección Naruto.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Hawks.png"
-                    class="card-img-top"
-                    alt="FunkoPop Hawks"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Hawks</h4>
-                    <p class="card-text">Colección My Hero Academia.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="fila">
-                <div class="card">
-                  <img
-                    src="../Images/Kid.png"
-                    class="card-img-top"
-                    alt="FunkoPop Kid"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Eustass Kid</h4>
-                    <p class="card-text">Colección Naruto.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Orochimaru.webp"
-                    class="card-img-top"
-                    alt="FunkoPop Orochimaru"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Orochimaru</h4>
-                    <p class="card-text">Colección Naruto.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Todoroki.png"
-                    class="card-img-top"
-                    alt="FunkoPop Todoroki"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Shōto Todoroki</h4>
-                    <p class="card-text">Colección My Hero Academia.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Trunks.webp"
-                    class="card-img-top"
-                    alt="FunkoPop Trunks"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Trunks</h4>
-                    <p class="card-text">Colección Dragon Ball.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-    
-                <div class="card">
-                  <img
-                    src="../Images/Aizawa.jpg"
-                    class="card-img-top"
-                    alt="FunkoPop Aizawa"
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Aizawa Shōta</h4>
-                    <p class="card-text">Colección My hero Academia.</p>
-                  </div>
-                  <div class="price-container">
-                    <h5 class="precio">24.99€</h5>
-                    <a href="#" class="btn btn-danger">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-
-      <footer>
-      <p>Buscanos en las redes sociales</p>
-
-      <div class="redes-sociales">
-        <ul>
-            <li>
-                <a href="https://facebook.com/" target="_blank"
-                ><i class="bi bi-facebook"></i></a>
-                <li>
-                  <a href="https://instagram.com/" target="_blank"
-                    ><i class="bi bi-instagram"></i></a>
-                </li>
-          </li>
-          <li>
-            <a href="https://x.com/" target="_blank">
-                <i class="bi bi-twitter-x"></i></a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="#" id="logo"><img src="../Images/Logo.png" class="logo" alt="Logo RedHawk" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="products">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="contact">Contacto</a>
+            </li>
+          </ul>
+          <div class="basket">
+            <i class="bi bi-basket2"></i>
+          </div>
+        </div>
       </div>
-      <p>RedHawk - Todos los derechos reservados &copy; 2025</p>
-    </footer>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    </nav>
+  </header>
+
+  <main>
+    <section id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../Images/Carrousel1.jpg" class="d-block w-100" alt="LuffyPromo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bienvenido a RedHawk</h5>
+            <p>Tu tienda online especializada en FunkoPop.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Images/Carrousel2.jpg" class="d-block w-100" alt="IsagiPromo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Siguenos en redes</h5>
+            <p>Siguenos para estar atento a todas las novedades.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Images/Carrousel3.jpg" class="d-block w-100" alt="TanjiroPromo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kimetsu no yaiba</h5>
+            <p>Descubre la nueva colección de Demon Slayer.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <section class="productos-destacados">
+      <h2>Productos destacados</h2>
+      <div class="productos-container">
+        <div class="fila">
+          <div class="card">
+            <img src="../Images/Nezuko.png" class="card-img-top" alt="FunkoPop Nezuko" />
+            <div class="card-body">
+              <h4 class="card-title">Kamado Nezuko</h4>
+              <p class="card-text">Colección Demon Slayer.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Gojo.png" class="card-img-top" alt="FunkoPop Gojo" />
+            <div class="card-body">
+              <h4 class="card-title">Satoru Gojo</h4>
+              <p class="card-text">Colección Jujutsu Kaisen.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Crocodile.png" class="card-img-top" alt="FunkoPop Crocodile" />
+            <div class="card-body">
+              <h4 class="card-title">Sir Crocodile</h4>
+              <p class="card-text">Colección One Piece.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Pain.png" class="card-img-top" alt="FunkoPop Pain" />
+            <div class="card-body">
+              <h4 class="card-title">Pain</h4>
+              <p class="card-text">Colección Naruto.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Hawks.png" class="card-img-top" alt="FunkoPop Hawks" />
+            <div class="card-body">
+              <h4 class="card-title">Hawks</h4>
+              <p class="card-text">Colección My Hero Academia.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fila">
+          <div class="card">
+            <img src="../Images/Kid.png" class="card-img-top" alt="FunkoPop Kid" />
+            <div class="card-body">
+              <h4 class="card-title">Eustass Kid</h4>
+              <p class="card-text">Colección Naruto.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Orochimaru.webp" class="card-img-top" alt="FunkoPop Orochimaru" />
+            <div class="card-body">
+              <h4 class="card-title">Orochimaru</h4>
+              <p class="card-text">Colección Naruto.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Todoroki.png" class="card-img-top" alt="FunkoPop Todoroki" />
+            <div class="card-body">
+              <h4 class="card-title">Shōto Todoroki</h4>
+              <p class="card-text">Colección My Hero Academia.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Trunks.webp" class="card-img-top" alt="FunkoPop Trunks" />
+            <div class="card-body">
+              <h4 class="card-title">Trunks</h4>
+              <p class="card-text">Colección Dragon Ball.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../Images/Aizawa.jpg" class="card-img-top" alt="FunkoPop Aizawa" />
+            <div class="card-body">
+              <h4 class="card-title">Aizawa Shōta</h4>
+              <p class="card-text">Colección My hero Academia.</p>
+            </div>
+            <div class="price-container">
+              <h5 class="precio">24.99€</h5>
+              <a href="#" class="btn btn-danger">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newletter">
+      <form>
+        <h3>¡No te vayas sin suscribirte!</h3>
+        <img src="../Images/Logo.png" id="form-logo" alt="Logo RedHawk" />
+        <p>Suscríbete a nuestra newsletter y sé el primero en conocer todas nuestras novedades y ofertas. ¡Únete ahora!
+        </p>
+        <input type="text" class="form-control" minlength="3" pattern="[A-Za-z\s]+" placeholder="Nombre" required>
+        <input type="email" class="form-control" placeholder="Email" required>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" required>
+          <label class="form-check-label">He leido y acepto la política de privacidad.</label>
+        </div>
+        <button type="submit" class="btn btn-danger" id="btn-newletter">Suscríbete</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Buscanos en las redes sociales</p>
+
+    <div class="redes-sociales">
+      <ul>
+        <li>
+          <a href="https://facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <li>
+          <a href="https://instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </li>
+        </li>
+        <li>
+          <a href="https://x.com/" target="_blank">
+            <i class="bi bi-twitter-x"></i></a>
+        </li>
+      </ul>
+    </div>
+    <p>RedHawk - Todos los derechos reservados &copy; 2025</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
