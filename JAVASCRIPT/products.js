@@ -1,33 +1,4 @@
-const homeLink = document.getElementById("index");
-const productsLink = document.getElementById("products");
-const contactLink = document.getElementById("contact");
-const logoLink = document.getElementById("logo");
-
-homeLink.addEventListener("click", (element) => {
-  element.preventDefault();
-  navigateTo("../HTML/index.html");
-});
-
-productsLink.addEventListener("click", (element) => {
-  element.preventDefault();
-  navigateTo("../HTML/products.html");
-});
-
-contactLink.addEventListener("click", (element) => {
-  element.preventDefault();
-  navigateTo("../HTML/contact.html");
-});
-
-logoLink.addEventListener("click", (element) => {
-  element.preventDefault();
-  navigateTo("../HTML/index.html");
-});
-
-function navigateTo(url) {
-  window.location.href = url;
-}
-
-const starProducts = [
+const products = [
   {
     name: "Kamado Nezuko",
     description: "Colección Demon Slayer",
@@ -60,12 +31,60 @@ const starProducts = [
     price: "24.99€",
     buyLink: "#",
   },
+  {
+    name: "Hawks",
+    description: "Colección My Hero Academia",
+    image: "../Images/Hawks.png",
+    alt: "FunkoPop Hawks",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Eustass Kid",
+    description: "Colección One Piece",
+    image: "../Images/Kid.png",
+    alt: "FunkoPop Kid",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Orochimaru",
+    description: "Colección Naruto",
+    image: "../Images/Orochimaru.webp",
+    alt: "FunkoPop Orochimaru",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Shōto Todoroki",
+    description: "Colección My Hero Academia",
+    image: "../Images/Todoroki.png",
+    alt: "FunkoPop Todoroki",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Trunks",
+    description: "Colección Dragon Ball",
+    image: "../Images/Trunks.webp",
+    alt: "FunkoPop Trunks",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Aizawa Shōta",
+    description: "Colección My Hero Academia",
+    image: "../Images/Aizawa.jpg",
+    alt: "FunkoPop Aizawa",
+    price: "24.99€",
+    buyLink: "#",
+  },
 ];
 
 const productsRow = document.getElementById("products-row");
 
-function renderProducts(starProducts) {
-  starProducts.forEach((product) => {
+function renderProducts(products) {
+  products.forEach((product) => {
     const card = document.createElement("div");
     card.className = "card";
 
@@ -85,4 +104,4 @@ function renderProducts(starProducts) {
   });
 }
 
-renderProducts(starProducts);
+renderProducts(products);

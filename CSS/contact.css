@@ -1,0 +1,91 @@
+.conta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.newletter {
+    flex: 1; 
+    max-width: 400px; 
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+
+#form-logo {
+    width: 30%;
+}
+
+.cont-int {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.address-panel, .map-panel {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 49vh;
+    text-align: center;
+}
+
+
+.map-panel iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group .input-group-text {
+    background-color: #f8f9fa;
+    border-right: 0;
+    margin: 15px 0;
+}
+
+.input-group .input-group-text i {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+.address-panel p {
+    margin: 0;
+}
+
+
+.input-group .form-control {
+    border-left: 0;
+    padding-left: 35px;
+}
+
+#btn-form {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.input-group.mb-3 {
+    margin-bottom: 15px;
+}
+
+textarea.form-control {
+    resize: vertical;
+    padding-left: 35px;
+}
