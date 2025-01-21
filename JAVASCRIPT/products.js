@@ -1,3 +1,32 @@
+const homeLink = document.getElementById("index");
+const productsLink = document.getElementById("products");
+const contactLink = document.getElementById("contact");
+const logoLink = document.getElementById("logo");
+
+homeLink.addEventListener("click", (element) => {
+  element.preventDefault();
+  navigateTo("../HTML/index.html");
+});
+
+productsLink.addEventListener("click", (element) => {
+  element.preventDefault();
+  navigateTo("../HTML/products.html");
+});
+
+contactLink.addEventListener("click", (element) => {
+  element.preventDefault();
+  navigateTo("../HTML/contact.html");
+});
+
+logoLink.addEventListener("click", (element) => {
+  element.preventDefault();
+  navigateTo("../HTML/index.html");
+});
+
+function navigateTo(url) {
+  window.location.href = url;
+}
+
 const products = [
   {
     name: "Kamado Nezuko",
@@ -76,6 +105,22 @@ const products = [
     description: "Colección My Hero Academia",
     image: "../Images/Aizawa.jpg",
     alt: "FunkoPop Aizawa",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Onami",
+    description: "Colección One Piece",
+    image: "../Images/Onami.webp",
+    alt: "FunkoPop Onami",
+    price: "24.99€",
+    buyLink: "#",
+  },
+  {
+    name: "Jack Sparrow",
+    description: "Colección Piratas del caribe",
+    image: "../Images/Jack_sparrow.jpeg",
+    alt: "FunkoPop Jack_sparrow",
     price: "24.99€",
     buyLink: "#",
   },
