@@ -1,238 +1,311 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-    background-image: url('../Images/panel-de-manga-hcfia3ruyaoxhr5i.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
-    background-position: center;
-    font-family: 'Poppins', sans-serif;
+  background-image: url("../Images/panel-de-manga-hcfia3ruyaoxhr5i.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
 }
-
 
 /* Estilos navegador */
 header {
-    background-color: #333;
+  background-color: #333;
 }
 .navbar-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .nav-item a {
-    color: #fff;
-    font-size: 1.4rem;
-    margin: 0 5rem
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 3rem;
 }
 
 .nav-item a:hover {
-    color: rgb(145, 12, 12)
+  color: rgb(145, 12, 12);
 }
 
 .basket {
-    color: #fff;
-    font-size: 1.8rem;
-    margin-right: 10rem;
-    cursor: pointer;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-right: 10rem;
+  cursor: pointer;
 }
 
 .logo {
-    margin-left: 10rem;
-    cursor: pointer;
-    width: 100px;
+  margin-left: 10rem;
+  cursor: pointer;
+  width: 100px;
 }
-
 
 /* Estilos de contenido principal */
 main {
-    background-color: rgb(236, 233, 233);
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
+  background-color: rgb(236, 233, 233);
+  width: 80%;
+  margin: auto;
+  padding: 0 0 50px 0;
 }
 
-.carousel-item{
-    height: 70vh;
+.carousel-item {
+  height: 70vh;
 }
 
 .carousel-caption h5 {
-    color: white;
-    text-shadow: #020819 8px -20px 9px;
-    font-size: 2.5em;
-    position: absolute;
-    bottom: 100px;
+  color: white;
+  font-size: 2.5em;
 }
 
 .carousel-caption p {
-    font-size: 2em;
-    position: absolute;
-    bottom: 10px;
+  font-size: 2em;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
 /* Estilos del card */
 .productos-destacados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
 }
 
-.productos-destacados h2{
-    font-size: 2.5rem;
-    margin: 0;
-    text-decoration: underline;
-    text-decoration-color: rgb(145, 12, 12);
-    text-underline-offset: 10px;
+.productos-destacados h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: rgb(145, 12, 12);
+  text-underline-offset: 10px;
 }
-
 
 .fila {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem 0;
 }
 
 .card {
-    padding: 20px;
-    background-color: #fff;
-    width: 16rem;
-    margin: 1rem;
+  padding: 20px;
+  background-color: #fff;
+  width: 16rem;
+  margin: 1rem;
 }
 
 .card:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .card-img-top:hover {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 2s ease;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 2s ease;
 }
 
 .price-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-
 
 /* Section de la NewLetter */
 .newletter {
-    text-align: center;
-    width: 40%;
-    background-color: #fff;
-    padding: 2rem;
-    margin: auto;
-    min-width: 530px;
+  text-align: center;
+  width: 40%;
+  background-color: #fff;
+  padding: 2rem;
+  margin: auto;
+  min-width: 530px;
 }
 
 .form-control {
-    background-color: rgb(236, 233, 233);
-    margin: 15px 0 15px 0;
+  background-color: rgb(236, 233, 233);
+  margin: 15px 0 15px 0;
 }
 
-#btn-newletter{
-    width: 100%;
-    margin-top: 10px;
+#btn-newletter {
+  width: 100%;
+  margin-top: 10px;
 }
 
 #form-logo {
-    width: 50%;
-    margin: 20px 0 20px 0;
+  width: 50%;
+  margin: 20px 0 20px 0;
 }
-
 
 /* Estilos de pie de página */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 .redes-sociales ul {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 .redes-sociales ul li {
-    margin: 20px;
-    display: inline;
+  margin: 20px;
+  display: inline;
 }
 
 .redes-sociales i {
-    color: #fff;
-    font-size: 2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-panel h2 {
+  font-size: 2.5rem;
+  margin: 50px 0;
+  text-decoration: underline;
+  text-decoration-color: rgb(145, 12, 12);
+  text-underline-offset: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.row article {
+  justify-content: space-around;
+  flex: 1;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.row article h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(145, 12, 12);
+}
+
+.row article p {
+  font-size: 1.1rem;
+}
+
+.video_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video_section video {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.hr-index {
+  width: 50%;
+  margin: 20px auto 50px;
+  border: solid 3px rgb(145, 12, 12);
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  main {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar-toggler{
+    background: #fff;
+  }
+
+  .basket {
+    display: none;
 }
 
 
-.info-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .info-panel h2 {
-    font-size: 2.5rem;
-    margin: 50px 0;
-    text-decoration: underline;
-    text-decoration-color: rgb(145, 12, 12);
-    text-underline-offset: 10px;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-around;
+}
+
+@media (max-width: 986px) {
+    .nav-item a {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-bottom: 2px solid transparent; /* Define el grosor del borde */
+        border-image: linear-gradient(to left, #fff, #333); /* Gradiente */
+        border-image-slice: 1; /* Asegura que el gradiente abarque todo el borde */
+    }
+}
+
+@media (min-with: 785px) and (max-width: 879px) {
+  main {
     width: 100%;
-    align-items: center;
   }
 
-  
-  .row article {
-    justify-content: space-around;
-    flex: 1;
+  .fila {
+    justify-content: space-between;
+    margin: 3rem 6rem;
+  }
+
+  .info-panel h2 {
     font-size: 3.5rem;
-    text-align: center;
-    margin: 20px; 
-  }
-
-  .row article h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(145, 12, 12);
-  }
-  
-  .row article p {
-    font-size: 1.1rem;
-  }
-
-  .video_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .video_section video {
-    width: 50%;
-    margin: 50px auto;
+    width: 80%;
+  }
+  .newletter {
+    width: 100%;
+    min-width: 388px;
+  }
+}
+
+@media (max-width: 580px) {
+  .productos-destacados h2 {
+    font-size: 1.6rem;
+  }
+  .row {
+    flex-direction: column;
   }
 
-
-  hr {
-
-    width: 50%;
-    margin: 0px auto 50px auto;
-    border: solid 3px rgb(145, 12, 12);
-    opacity: 1;
+  .video_section video {
+    width: 80%;
   }
+
+  .info-panel h2 {
+    font-size: 2rem;
+  }
+  .row article {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .newletter {
+    width: 100%;
+    min-width: 375px;
+  }
+}

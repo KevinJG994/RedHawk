@@ -102,7 +102,7 @@ textarea.form-control {
 
     .address-panel, .map-panel {
         height: auto;
-        text-align: left;
+        text-align: center;
     }
 
     .map-panel iframe {
@@ -119,6 +119,9 @@ textarea.form-control {
 
     .address-panel h3{
         text-align: center;
+    }
+    .conta {
+        align-items: center;
     }
 }
 
