@@ -1,183 +1,175 @@
 /* Estilos generales */
 main {
-   padding: 50px 0; 
+  padding: 50px 0;
 }
 
-.conta {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 40px;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 40px;
 }
 
 .newletter {
-    max-width: 400px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0;
+  max-width: 400px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 #form-logo {
-    width: 30%;
+  width: 30%;
 }
 
-.cont-int {
-    display: flex;
-    flex: 1;
+.map-container {
+  display: flex;
+  flex: 1;
 }
 
 .map-panel {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
 }
 
 .address-panel {
-    padding: 20px;
+  padding: 20px;
 }
 
 .address-panel p {
-    margin: 0;
+  margin: 0;
 }
 
 .map-panel iframe {
-    width: 100%;
-    height: 350px;
-    border-radius: 8px;
-    border: none;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  border: none;
 }
 
 .input-group {
-    position: relative;
+  position: relative;
 }
 
 .input-group .input-group-text {
-    background-color: #f8f9fa;
-    border-right: 0;
-    margin: 15px 0;
+  background-color: #f8f9fa;
+  border-right: 0;
+  margin: 15px 0;
 }
 
 .input-group .input-group-text i {
-    font-size: 1.2rem;
-    color: #6c757d;
+  font-size: 1.2rem;
+  color: #6c757d;
 }
 
 .input-group .form-control {
-    border-left: 0;
-    padding-left: 35px;
+  border-left: 0;
+  padding-left: 35px;
 }
 
 #btn-form {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 20px;
 }
-
-/* .input-group.mb-3 {
-    margin-bottom: 15px;
-} */
 
 textarea.form-control {
-    resize: vertical;
-    padding-left: 35px;
+  resize: vertical;
+  padding-left: 35px;
 }
 
-hr{
-    width: 50%;
-    margin: 10px auto;
-    border: solid 3px rgb(145, 12, 12);
-    opacity: 1;
+hr {
+  width: 50%;
+  margin: 10px auto;
+  border: solid 3px rgb(145, 12, 12);
+  opacity: 1;
+}
+
+
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 10px;
   }
 
+  .newletter {
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0 0 0;
+  }
 
-@media (max-width: 1024px) {
-    .conta {
-        flex-direction: column;
-        padding: 10px;
-    }
+  .map-container {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .newletter {
-        max-width: 100%;
-        height: auto;
-        margin: 50px 0 0 0;
-    }
+  .address-panel,
+  .map-panel {
+    height: auto;
+    text-align: center;
+    margin: 0;
+    min-width: 530px;
+  }
 
-
-    .cont-int {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .address-panel, .map-panel {
-        height: auto;
-        text-align: center;
-        margin: 0;
-        min-width: 530px;
-    }
-
-    .map-panel iframe {
-        height: 300px;
-    }
+  .map-panel iframe {
+    height: 300px;
+  }
 }
 
 
 @media (max-width: 1024px) {
-    .conta {
-        align-items: center;
-    }
+  .contact-container {
+    align-items: center;
+  }
 
-
-        .newletter {
-       
-            margin: 0;
-        }
+  .newletter {
+    margin: 0;
+  }
 }
-
-
 
 
 @media (max-width: 768px) {
-    main {
-        padding: 0 0 50px 0;
-    }
-    
-    #form-logo {
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-    }
+  main {
+    padding: 0 0 50px 0;
+  }
 
-    .address-panel h3{
-        text-align: center;
-    }
-  
-    .newletter {
-        margin-top: 50px;
-    }
+  #form-logo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .address-panel h3 {
+    text-align: center;
+  }
+
+  .newletter {
+    margin-top: 50px;
+  }
 }
 
+
 @media (max-width: 480px) {
+  #btn-form {
+    font-size: 1rem;
+  }
 
+  textarea.form-control {
+    padding-left: 15px;
+  }
 
-    #btn-form {
-        font-size: 1rem;
-    }
+  .newletter {
+    min-width: 350px;
+  }
 
-    textarea.form-control {
-        padding-left: 15px;
-    }
-
-    .newletter {
-        min-width: 350px;
-    }
-
-    .address-panel, .map-panel {
-        min-width: 350px;
-    }
+  .address-panel,
+  .map-panel {
+    min-width: 350px;
+  }
 }

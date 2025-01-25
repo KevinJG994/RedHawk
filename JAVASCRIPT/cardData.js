@@ -98,35 +98,39 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  // Obtener todos los productos
   function renderProducts(products, container) {
     products.forEach((product) => {
       const card = document.createElement("div");
       card.className = "card";
 
       card.innerHTML = `
-      <img src="${product.image}" class="card-img-top" alt="${product.alt}" />
-      <div class="card-body">
-        <h4 class="card-title">${product.name}</h4>
-        <p class="card-text">${product.description}</p>
-      </div>
-      <div class="price-container">
-        <h5 class="precio">${product.price}</h5>
-        <a href="${product.buyLink}" class="btn btn-danger">Comprar</a>
-      </div>
-    `;
+        <img src="${product.image}" class="card-img-top" alt="${product.alt}" />
+        <div class="card-body">
+          <h4 class="card-title">${product.name}</h4>
+          <p class="card-text">${product.description}</p>
+        </div>
+        <div class="price-container">
+          <h5 class="precio">${product.price}</h5>
+          <a href="${product.buyLink}" class="btn btn-danger">Comprar</a>
+        </div>
+      `;
 
       container.appendChild(card);
     });
   }
 
-  // Renderizar todos los productos
+  // Mostrar todos los productos
   const productsRow = document.getElementById("products-row");
-  renderProducts(products, productsRow);
+  if (productsRow) {
+    renderProducts(products, productsRow);
+  }
 
-  // Renderizar solo 4 productos destacados
+
+  // Mostrar solo los 4 productos aleatorios
   const starProductsRow = document.getElementById("star-products-row");
-  const shuffledProducts = products.sort(() => 0.5 - Math.random());
-  const starProducts = shuffledProducts.slice(0, 4);
-  renderProducts(starProducts, starProductsRow);
+  if (starProductsRow) {
+    const shuffledProducts = products.sort(() => 0.5 - Math.random());
+    const starProducts = shuffledProducts.slice(0, 4);
+    renderProducts(starProducts, starProductsRow);
+  }
 });
