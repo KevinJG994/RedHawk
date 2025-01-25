@@ -11,6 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactLink = document.getElementById("contact");
   contactLink.setAttribute("href", "../HTML/contact.html");
 
+  // TO-DO  Arreglar Boton
+  // const productsButton = document.getElementById('productsButton');
+  // productsButton.onclick = () => {
+  //   window.location.href = "../HTML/products.html";
+  // };
+  
+
   const products = [
     {
       name: "Kamado Nezuko",

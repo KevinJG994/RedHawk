@@ -22,7 +22,5 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    top: 30%;
-    left: 20%;
-    transform: translateY(-50%);
+    transform: translateY(50%);
   }

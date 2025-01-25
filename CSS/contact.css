@@ -1,12 +1,15 @@
 /* Estilos generales */
+main {
+   padding: 50px 0; 
+}
+
 .conta {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 20px;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .newletter {
@@ -15,7 +18,8 @@
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 100vh;
+    /* height: 100vh; */
+    /* margin: 50px 0px; */
 }
 
 #form-logo {
@@ -26,17 +30,32 @@
     flex: 2;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    margin: 0;
 }
 
 .address-panel, .map-panel {
     background-color: #f8f9fa;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 49vh;
+    width: 70%;
     text-align: center;
+    /* height: 49vh; */
+}
+
+.address-panel {
+
+    padding: 20px;
+}
+
+.map-panel{
+
+}
+
+.address-panel p {
+    margin: 0;
 }
 
 .map-panel iframe {
@@ -74,14 +93,21 @@
     margin-top: 20px;
 }
 
-.input-group.mb-3 {
+/* .input-group.mb-3 {
     margin-bottom: 15px;
-}
+} */
 
 textarea.form-control {
     resize: vertical;
     padding-left: 35px;
 }
+
+hr{
+    width: 50%;
+    margin: 10px auto;
+    border: solid 3px rgb(145, 12, 12);
+    opacity: 1;
+  }
 
 
 @media (max-width: 1024px) {
@@ -93,7 +119,9 @@ textarea.form-control {
     .newletter {
         max-width: 100%;
         height: auto;
+        margin: 50px 0 0 0;
     }
+
 
     .cont-int {
         flex-direction: column;
@@ -103,6 +131,8 @@ textarea.form-control {
     .address-panel, .map-panel {
         height: auto;
         text-align: center;
+        margin: 0;
+        min-width: 530px;
     }
 
     .map-panel iframe {
@@ -110,7 +140,27 @@ textarea.form-control {
     }
 }
 
+
+@media (max-width: 1024px) {
+    .conta {
+        align-items: center;
+    }
+
+
+        .newletter {
+       
+            margin: 0;
+        }
+}
+
+
+
+
 @media (max-width: 768px) {
+    main {
+        padding: 0 0 50px 0;
+    }
+    
     #form-logo {
         width: 50%;
         display: block;
@@ -120,15 +170,14 @@ textarea.form-control {
     .address-panel h3{
         text-align: center;
     }
-    .conta {
-        align-items: center;
+  
+    .newletter {
+        margin-top: 50px;
     }
 }
 
 @media (max-width: 480px) {
-    .input-group .input-group-text {
-        margin: 10px 0;
-    }
+
 
     #btn-form {
         font-size: 1rem;
@@ -136,5 +185,13 @@ textarea.form-control {
 
     textarea.form-control {
         padding-left: 15px;
+    }
+
+    .newletter {
+        min-width: 350px;
+    }
+
+    .address-panel, .map-panel {
+        min-width: 350px;
     }
 }
