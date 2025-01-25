@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
     logoLink.setAttribute("href", "../index.html");
   
     const productsLink = document.getElementById("products");
-    productsLink.setAttribute("href", "../HTML/products.html");
+    productsLink.setAttribute("href", "./HTML/products.html");
   
     const contactLink = document.getElementById("contact");
-    contactLink.setAttribute("href", "../HTML/contact.html");
+    contactLink.setAttribute("href", "./HTML/contact.html");
   
 
     // Botón de productos
     const productsButton = document.getElementById("productsButton");
     if (productsButton) {
       productsButton.onclick = () => {
-        window.location.href = "../HTML/products.html";
+        window.location.href = "./HTML/products.html";
       };
     }
   
