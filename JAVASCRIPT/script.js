@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Navegación
     const homeLink = document.getElementById("index");
-    homeLink.setAttribute("href", "../HTML/index.html");
+    homeLink.setAttribute("href", "../index.html");
   
     const logoLink = document.getElementById("logo");
-    logoLink.setAttribute("href", "../HTML/index.html");
+    logoLink.setAttribute("href", "../index.html");
   
     const productsLink = document.getElementById("products");
     productsLink.setAttribute("href", "../HTML/products.html");
