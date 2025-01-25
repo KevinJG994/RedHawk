@@ -5,21 +5,18 @@ main {
 
 .conta {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px;
+    gap: 40px;
+    padding: 0 40px;
 }
 
 .newletter {
-    flex: 1;
     max-width: 400px;
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* height: 100vh; */
-    /* margin: 50px 0px; */
+    margin: 0;
 }
 
 #form-logo {
@@ -27,31 +24,20 @@ main {
 }
 
 .cont-int {
-    flex: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 0;
+    flex: 1;
 }
 
-.address-panel, .map-panel {
+.map-panel {
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    width: 100%;
     text-align: center;
-    /* height: 49vh; */
 }
 
 .address-panel {
-
     padding: 20px;
-}
-
-.map-panel{
-
 }
 
 .address-panel p {

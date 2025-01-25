@@ -123,15 +123,15 @@
 <hr class="hr-index">
 
     <section class="newletter">
-      <form>
+      <form id="form-newLetter">
         <h3>¡No te vayas sin suscribirte!</h3>
         <img src="../Images/Logo.png" id="form-logo" alt="Logo RedHawk" />
         <p>Suscríbete a nuestra newsletter y sé el primero en conocer todas nuestras novedades y ofertas. ¡Únete ahora!
         </p>
-        <input type="text" class="form-control" minlength="3" pattern="[A-Za-z\s]+" placeholder="Nombre" required>
-        <input type="email" class="form-control" placeholder="Email" required>
+        <input type="text" class="form-control" minlength="3" pattern="[A-Za-z\s]+" placeholder="Nombre" required id="inputName">
+        <input type="email" class="form-control" placeholder="Email" required id="inputEmail">
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" required>
+          <input type="checkbox" class="form-check-input" required id="inputCheck">
           <label class="form-check-label">He leido y acepto la política de privacidad.</label>
         </div>
         <button type="submit" class="btn btn-danger" id="btn-newletter">Suscríbete</button>
@@ -159,6 +159,7 @@
     <p>RedHawk - Todos los derechos reservados &copy; 2025</p>
   </footer>
   <script src="../JAVASCRIPT/script.js"></script>
+  <script src="../JAVASCRIPT/cardData.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
